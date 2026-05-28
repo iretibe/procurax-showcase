@@ -2,9 +2,11 @@
 
 ### Enterprise Procurement & Workflow Intelligence Platform
 
-A secure, enterprise-grade procurement, approval, and compliance workflow system designed to digitize and govern end-to-end purchasing processes across organizations, ministries, and large enterprises.
+ProcuraX is a secure, enterprise-grade procurement, approval, and compliance management platform designed to digitize and govern end-to-end purchasing operations across enterprises, ministries, institutions, and regulated organizations.
 
-ProcuraX transforms fragmented, manual procurement operations (email, spreadsheets, paper approvals) into a **fully auditable, role-driven digital workflow ecosystem**.
+The platform transforms fragmented, manual procurement processes including spreadsheets, emails, paper-based approvals, and disconnected communication channels into a centralized, fully auditable, workflow-driven digital ecosystem.
+
+ProcuraX enforces structured approval governance, procurement transparency, budget accountability, and operational traceability across every stage of the procurement lifecycle.
 
 ---
 
@@ -21,111 +23,175 @@ It is designed for:
 
 ---
 
-# Core Problem It Solves
+# Core Value Proposition
 
-Traditional procurement systems suffer from:
+ProcuraX is not simply a procurement application.
 
-- Manual approval delays
-- Lack of transparency
-- Budget overruns without enforcement
-- Poor vendor traceability
-- Weak audit trails
-- Fragmented communication across departments
+It is a **workflow intelligence and approval governance platform** built to ensure that every operational step follows controlled authorization pathways before progressing to the next stage.
 
----
+Every procurement activity — from requisition creation to goods receipt — is governed by configurable approval workflows where authorized personnel can:
 
-### ProcuraX solves this by introducing:
+- Approve
+- Reject
+- Escalate
+- Delegate
+- Route
 
-- Structured digital approval workflows
-- Enforced budget validation before approval
-- End-to-end procurement traceability
-- Centralized vendor and contract management
-- Immutable audit logging
+before the process advances to the next operational level.
+
+This guarantees:
+
+- Procurement control
+- Financial accountability
+- Regulatory compliance
+- Audit traceability
+- Segregation of duties
+- Enterprise governance enforcement
 
 ---
 
 # Core Modules
 
-## 1. Requisition Management
+## 1. Dashboard
 
-- Create and submit purchase requisitions
+Centralized operational visibility into procurement activities, pending approvals, purchase orders, supplier activities, inventory movement, and workflow status metrics.
+
+---
+
+## 2. Requisitions Management
+
+- Create procurement requests
 - Attach supporting documents
-- Track request lifecycle in real-time
+- Define item requirements
+- Submit requests into approval workflows
+- Track requisition lifecycle in real time
 - Department-based categorization
 
 ---
 
-## 2. Workflow & Approval Engine
+## 2. Suppliers
 
-A dynamic rule-based workflow system.
+Centralized supplier and vendor management module supporting procurement governance and supplier lifecycle visibility.
 
-- Multi-level approval chains
-- Role-based routing (RBAC)
-- Conditional approval logic
-- Escalation rules for delays
-- Approval history tracking
-
-
-### Supported Devices:
-
-- Teltonika GPS devices
-- Wialon-compatible devices
-- Traccar-supported hardware ecosystem
+- Supplier onboarding
+- Supplier profile management
+- Vendor categorization
+- Compliance & documentation tracking
+- Supplier relationship visibility
+- Approved supplier management
 
 ---
 
-## 3. Vendor Management
+## 3. Workflow & Approval Engine
 
-- Vendor onboarding and profiling
-- Vendor classification and rating
-- Contract attachment and lifecycle tracking
-- Performance history tracking (future-ready)
+Enterprise workflow engine supporting:
 
----
+- Multi-level approval routing
+- Approval delegation
+- Conditional workflow escalation
+- Approval limit enforcement
+- Rejection and return workflows
+- Full approval audit trail
 
-## 4. Purchase Order Management
-
-- Convert approved requisitions into purchase orders
-- Track PO lifecycle from creation to completion
-- Vendor assignment and fulfillment tracking
+No process advances without authorized approval.
 
 ---
 
-## 5. Budget Control & Validation
+## 4. Suppliers
 
-- Department-level budget allocation
-- Real-time spend validation
-- Pre-approval budget enforcement
-- Overspending prevention rules
-
----
-
-## 6. Audit & Compliance Engine
-
-- Full system audit logging
-- Immutable approval history
-- Traceable procurement lifecycle
-- Compliance reporting for internal/external audits
+- Supplier onboarding
+- Supplier profile management
+- Vendor categorization
+- Supplier compliance tracking
+- Procurement relationship visibility
 
 ---
 
-## 7. Identity & Access Control (RBAC)
+## 5. Purchase Orders
 
-- Role-based system access
-- Permission-based feature restrictions
-- Secure workflow separation between departments
+- Generate purchase orders from approved requisitions
+- Track PO lifecycle
+- Supplier assignment and fulfillment monitoring
+- Procurement execution tracking
+
+---
+
+## 6. Receive Goods
+
+- Goods receipt processing
+- Quantity validation
+- Delivery verification
+- Procurement completion tracking
+- Inventory synchronization
+
+---
+
+## 7. Inventory
+
+- Inventory monitoring
+- Stock movement tracking
+- Item availability visibility
+- Procurement-to-stock integration
+
+---
+
+## 8. Documents
+
+Centralized procurement document repository for:
+
+- Quotations
+- Invoices
+- Purchase orders
+- Contracts
+- Delivery documents
+- Approval attachments
+
+---
+
+## 9. Administration
+
+### Approval Limit Management
+
+Defines financial thresholds and authorization boundaries for approvers.
+
+### Approval Delegation
+
+Supports temporary approval reassignment and operational continuity.
+
+### Approval Routing Matrix
+
+Configurable workflow routing engine controlling approval sequences and escalation logic.
+
+### Users & Roles
+
+Enterprise-grade RBAC (Role-Based Access Control) for secure operational segregation.
+
+---
+
+## 10. Reports
+
+Operational and compliance reporting including:
+
+- Procurement history
+- Approval performance
+- Supplier analytics
+- Budget tracking
+- Audit reporting
+- Inventory reports
 
 ---
 
 # System Architecture
 
-ProcuraX follows enterprise-grade architectural principles:
+ProcuraX follows enterprise-grade architectural principles including:
 
-- Clean Architecture (Domain / Application / Infrastructure / UI separation)
+- Clean Architecture
 - CQRS (Command Query Responsibility Segregation)
-- Workflow-driven domain design
-- Event-based state transitions
-- Strong separation of concerns
+- Workflow-driven domain modeling
+- Role-Based Access Control (RBAC)
+- Audit-first system design
+- Modular service separation
+- Secure API boundaries
 
 ---
 
@@ -161,6 +227,31 @@ Vendor Fulfillment
         ↓
 Audit Logging & Reporting
 ```
+
+---
+
+# Target Sectors
+
+ProcuraX is designed for organizations requiring structured procurement governance including:
+
+- Government institutions
+- Ministries & public sector agencies
+- Financial institutions
+- Universities & educational institutions
+- NGOs & donor-funded organizations
+- Enterprise procurement departments
+
+---
+
+# Security & Compliance
+
+- Role-Based Access Control (RBAC)
+- Workflow authorization enforcement
+- Immutable audit trails
+- Approval traceability
+- Controlled operational segregation
+- Secure authentication & authorization
+
 ---
 
 # System Screenshots
@@ -192,6 +283,12 @@ Audit Logging & Reporting
 ## Purchase Orders
 
 ![Purchase Orders](screenshots/purchase-orders.png)
+
+---
+
+## Good Receive
+
+![Purchase Orders](screenshots/good-receipt.png)
 
 ---
 
